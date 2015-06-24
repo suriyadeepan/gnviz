@@ -1,8 +1,16 @@
 #!/usr/bin/python
 
-####
+##############################################
+#   @author : Suriyadeepan Ramamoorthy      ##
+#   @eamil  : suriyadeepan.r@gmail.com      ##
+#   @web    : suriyadeepan.me               ##
+##############################################
+
+
+
+##########
 # Brace youself! Import statements are arriving
-####
+##########
 import sys
 import os
 import time
@@ -47,15 +55,6 @@ def on_draw():
     game_window.clear()
     background.blit(0,0)
 
-
-
-    #pyglet.gl.glColor4f(1.0,0,0,1.0)                                               
-    #glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)                             
-    #glEnable (GL_BLEND)                                                            
-    #glEnable (GL_LINE_SMOOTH);                                                     
-    #glHint (GL_LINE_SMOOTH_HINT, GL_DONT_CARE)                                     
-    #glLineWidth (3)                                                                
-    #pyglet.gl.glColor3f(1.0, 1.0, 1.0);
     pyglet.graphics.draw(2, pyglet.gl.GL_LINES,('v2i', (10, 15, 300, 305)) )  
 
     for sprite_elm in sprite:
@@ -105,14 +104,13 @@ def update_mob():
 
 
 if __name__ == '__main__':
-    ###
+    #####
     # update function is called every "time_per_frame" seconds
-    ###
+    #####
     pyglet.clock.schedule_interval(update, time_per_frame)
 
-    ###
-    # setup
-    ###
+    #########
+    # setup #
     sprite = list()
     for node in nodes:
         if len(node) > 0:
@@ -122,7 +120,7 @@ if __name__ == '__main__':
     ## run ##
     pyglet.app.run()
 
-    ###
-    # cleanup
+    ###########
+    # cleanup #
     log.close()
 
