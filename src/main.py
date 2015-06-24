@@ -2,7 +2,7 @@
 
 ##############################################
 #   @author : Suriyadeepan Ramamoorthy      ##
-#   @eamil  : suriyadeepan.r@gmail.com      ##
+#   @email  : suriyadeepan.r@gmail.com      ##
 #   @web    : suriyadeepan.me               ##
 ##############################################
 
