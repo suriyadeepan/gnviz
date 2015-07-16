@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+grep -E 'MobilityManager.*changed' $1 > mobi.grep
+
+casparse 3 mobi.grep 
+
+rm *.grep

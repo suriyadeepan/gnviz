@@ -1,0 +1,4 @@
+#!/bin/bash
+
+$GNVIZ/src/parser/parsetrace $1
+$GNVIZ/src/gui/main.py

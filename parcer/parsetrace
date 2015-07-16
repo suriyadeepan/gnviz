@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+grep -E 'MobilityManager.*changed' $1 > mobi.grep
+grep -E 'SET STATE to TX|Received packet|Failed packet' $1 > radio.grep
+grep -E 'MobilityManager.*initial' $1 > topology.grep
+
+casparse 1 radio.grep 
+casparse 2 topology.grep
+casparse 3 mobi.grep 
+
+rm *.grep
